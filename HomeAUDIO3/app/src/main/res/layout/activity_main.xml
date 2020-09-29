@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_marginTop="16dp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Status:"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/bluetoothStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/checkboxLED1"
+            android:ellipsize="end"
+            android:layout_marginLeft="10dp"
+            android:maxLines="1"
+            android:text="Bluetooth Status"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Recieved:"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/readBuffer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:ellipsize="end"
+            android:layout_marginLeft="10dp"
+            android:text="No message recieved" />
+
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/connect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="connect"
+            android:textAlignment="center" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="409dp"
+        android:layout_height="515dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:gravity="top">
+
+        <LinearLayout
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <Switch
+                android:id="@+id/amp_power_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AMPLIFIER POWER"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"/>
+            <Button
+                android:id="@+id/amp_volume_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="AMP VOL +"
+                android:textAlignment="center" />
+            <Button
+                android:id="@+id/amp_volume_down"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="AMP VOL -"
+                android:textAlignment="center" />
+            <Button
+                android:id="@+id/bass_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="BASS +"
+                android:textAlignment="center" />
+            <Button
+                android:id="@+id/bass_down"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="BASS -"
+                android:textAlignment="center" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:textAlignment="center"
+            android:gravity="center">
+
+            <Switch
+                android:id="@+id/bt_power_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BT POWER"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp"/>
+            <Switch
+                android:id="@+id/anc_control_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ANC CONTROL "
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp" />
+            <Button
+                android:id="@+id/volume_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="VOL +"
+                android:textAlignment="center" />
+            <Button
+                android:id="@+id/volume_down"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="VOL -"
+                android:textAlignment="center" />
+            <Button
+                android:id="@+id/play_pause"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="PLAY/PAUSE"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
